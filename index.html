@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="The acting, performance, and technical theatre portfolio of MarcAntonio Murillo, also known as Magic Marc.">
+  <meta property="og:title" content="MarcAntonio Murillo | Actor & Theatre Artist">
+  <meta property="og:description" content="Selected stage work, press, media, technical theatre experience, and résumé for MarcAntonio Murillo.">
+  <meta property="og:type" content="website">
   <title>MarcAntonio Murillo | Actor & Theatre Artist</title>
   <style>
 :root {
@@ -120,6 +123,21 @@ h3 { margin: 0; line-height: 1.2; }
 .play-button { display: inline-flex; align-items: center; gap: .75rem; white-space: nowrap; color: var(--plum); font-weight: 850; }
 .play-button span { display: grid; place-items: center; width: 48px; aspect-ratio: 1; border-radius: 50%; background: var(--plum); color: #fff; font-size: .85rem; }
 
+.section-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .75rem 1.4rem; }
+.credit-badge { display: inline-block; margin-top: .55rem; padding: .22rem .55rem; border-radius: 999px; background: var(--plum); color: #fff; font-size: .67rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+
+.press { position: relative; overflow: hidden; background: var(--paper); }
+.press::before { content: ''; position: absolute; width: 430px; height: 430px; right: -180px; top: -210px; border-radius: 50%; background: rgba(216,170,85,.16); }
+.press-heading { position: relative; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr); gap: clamp(2rem, 7vw, 7rem); align-items: end; margin-bottom: 3rem; }
+.press-heading p { max-width: 540px; margin: 0; color: #655d64; font-size: 1.05rem; }
+.press-grid { position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.press-card { display: flex; flex-direction: column; min-height: 320px; padding: clamp(1.5rem, 3.5vw, 2.5rem); border: 1px solid var(--line); border-top: 5px solid var(--plum); background: #fff; box-shadow: 0 20px 55px rgba(43,23,53,.08); }
+.press-meta { margin: 0 0 1rem; color: var(--wine); font-size: .72rem; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+.press-card h3 { max-width: 620px; font: 2rem/1.08 var(--serif); }
+.press-card p { color: #655d64; }
+.press-card .text-link { margin-top: auto; align-self: flex-start; }
+.press-note { position: relative; margin: 1.4rem 0 0; color: #766d75; font-size: .82rem; }
+
 .technical { background: var(--plum-deep); color: #fff; }
 .technical .section-label, .technical .eyebrow { color: #e4bd73; }
 .section-heading.light { align-items: start; }
@@ -169,6 +187,8 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
   .technical-grid { grid-template-columns: 1fr; }
   .tech-card { min-height: auto; }
   .media-strip { align-items: flex-start; flex-direction: column; }
+  .press-heading, .press-grid { grid-template-columns: 1fr; }
+  .section-links { justify-content: flex-start; }
 }
 
 @media (max-width: 520px) {
@@ -194,6 +214,7 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
       <a href="#about">About</a>
       <a href="#performance">Performance</a>
+      <a href="#press">Press</a>
       <a href="#technical">D&amp;T</a>
       <a href="#resume">Résumé</a>
       <a class="nav-cta" href="#contact">Contact</a>
@@ -246,7 +267,10 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
           <p class="eyebrow">Stage + screen</p>
           <h2>Selected performance work</h2>
         </div>
-        <a class="text-link" href="https://www.backstage.com/u/marcantonio-murillo/" target="_blank" rel="noreferrer">Full Backstage profile ↗</a>
+        <div class="section-links">
+          <a class="text-link" href="https://www.backstage.com/u/marcantonio-murillo/" target="_blank" rel="noopener noreferrer">Backstage profile ↗</a>
+          <a class="text-link" href="https://www.instagram.com/nautheatre/" target="_blank" rel="noopener noreferrer">NAU Theatre Instagram ↗</a>
+        </div>
       </div>
 
       <div class="performance-grid">
@@ -269,6 +293,10 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
             <div><h3>Oedipus El Rey</h3><p>Oedipus · NAU Theatre</p></div>
           </article>
           <article class="credit">
+            <span class="credit-year">2022</span>
+            <div><h3>Drop Dead!</h3><p>Phillip · Newport Theatre Arts Center</p><span class="credit-badge">Featured in press</span></div>
+          </article>
+          <article class="credit">
             <span class="credit-year">2020</span>
             <div><h3>Fiddler on the Roof</h3><p>Tevye · PCHS</p></div>
           </article>
@@ -279,6 +307,14 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
           <article class="credit">
             <span class="credit-year">2018</span>
             <div><h3>Little Shop of Horrors</h3><p>Seymour · Saddleback College</p></div>
+          </article>
+          <article class="credit">
+            <span class="credit-year">2018</span>
+            <div><h3>Thoroughly Modern Millie</h3><p>Trevor Graydon · Pacific Coast High School</p></div>
+          </article>
+          <article class="credit">
+            <span class="credit-year">2016</span>
+            <div><h3>Urinetown</h3><p>Caldwell B. Cladwell · Pacific Coast High School</p></div>
           </article>
         </div>
       </div>
@@ -293,10 +329,36 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
       </div>
     </section>
 
+    <section id="press" class="section press">
+      <div class="section-label">03 / Press</div>
+      <div class="press-heading">
+        <div class="reveal">
+          <p class="eyebrow">Drop Dead! · 2022</p>
+          <h2>Performance in the press</h2>
+        </div>
+        <p class="reveal">MarcAntonio’s performance as Phillip at Newport Theatre Arts Center was covered by two Southern California arts publications.</p>
+      </div>
+      <div class="press-grid">
+        <article class="press-card reveal">
+          <p class="press-meta">The Show Report · November 21, 2022</p>
+          <h3>Review: <em>Drop Dead!</em> at Newport Theatre Arts Center</h3>
+          <p>The review identifies Phillip as the energetic stage manager and director’s assistant working to keep the chaotic cast on track.</p>
+          <a class="text-link" href="https://www.theshowreport.org/post/review-drop-dead-newport-theatre-arts-center" target="_blank" rel="noopener noreferrer">Read the review ↗</a>
+        </article>
+        <article class="press-card reveal">
+          <p class="press-meta">Newport Beach Independent · November 22, 2022</p>
+          <h3>Murder-mystery farce <em>Drop Dead!</em></h3>
+          <p>The review singles out MarcAntonio’s Phillip as a loyal, overworked aide determined to help the actors and hold the production together.</p>
+          <a class="text-link" href="https://www.newportbeachindy.com/murder-mystery-farce-drop-dead-at-newport-theatre-arts-center-is-frantic-and-silly/" target="_blank" rel="noopener noreferrer">Read the review ↗</a>
+        </article>
+      </div>
+      <p class="press-note">Review descriptions are concise paraphrases; follow each link to read the original coverage.</p>
+    </section>
+
     <section id="technical" class="section technical">
       <div class="section-heading light">
         <div>
-          <div class="section-label">03 / Design &amp; Technical</div>
+          <div class="section-label">04 / Design &amp; Technical</div>
           <p class="eyebrow">Behind the scenes</p>
           <h2>Technical theatre practice</h2>
         </div>
@@ -329,7 +391,7 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
     <section id="resume" class="section resume">
       <div class="resume-panel reveal">
         <div>
-          <div class="section-label">04 / Résumé</div>
+          <div class="section-label">05 / Résumé</div>
           <p class="eyebrow">Education + training</p>
           <h2>Building the craft onstage and off.</h2>
           <p>Bachelor’s Degree in Psychology with a Minor in Theatre, Northern Arizona University — December 2026. Additional training includes the Saddleback College Shakespeare Festival, PDM Acting Class, and Improv Club.</p>
@@ -343,7 +405,7 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
 
     <section id="contact" class="section contact">
       <div class="contact-copy reveal">
-        <div class="section-label">05 / Contact</div>
+        <div class="section-label">06 / Contact</div>
         <p class="eyebrow">Let’s make something memorable</p>
         <h2>Available for acting, creative, and collaborative opportunities.</h2>
       </div>
@@ -352,6 +414,7 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
         <a href="tel:+19498423408"><span>Phone</span>(949) 842-3408</a>
         <a href="https://www.youtube.com/channel/UCVegcE0ScnPicm8DHMC8BIw" target="_blank" rel="noreferrer"><span>YouTube</span>Marc &amp; Gigi ↗</a>
         <a href="https://www.backstage.com/u/marcantonio-murillo/" target="_blank" rel="noreferrer"><span>Profile</span>Backstage ↗</a>
+        <a href="https://www.instagram.com/nautheatre/" target="_blank" rel="noopener noreferrer"><span>NAU Theatre</span>Instagram ↗</a>
       </div>
     </section>
   </main>
