@@ -279,6 +279,21 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
   footer { flex-direction: column; gap: 0; }
 }
 
+
+.writing { background: var(--cream); }
+.writing-panel { display: grid; grid-template-columns: minmax(0,1.2fr) minmax(250px,.8fr); gap: clamp(2rem,6vw,6rem); align-items: center; padding: clamp(1.5rem,4vw,4rem); border: 1px solid var(--line); border-radius: 20px; background: var(--paper); }
+.writing-title { max-width: 700px; }
+.writing-byline { margin: 1.5rem 0 0; color: var(--plum); font-weight: 700; }
+.writing-details { border-left: 2px solid var(--gold); padding-left: clamp(1.5rem,3vw,3rem); }
+.writing-details p { max-width: 340px; margin: 1.25rem 0 1.5rem; color: #6d646d; font-size: 1.05rem; }
+.writing-die { display: grid; grid-template-columns: repeat(3,1fr); gap: 7px; width: 64px; height: 64px; padding: 12px; border: 1px solid var(--plum); border-radius: 12px; transform: rotate(-8deg); }
+.writing-die span { width: 8px; height: 8px; border-radius: 50%; background: var(--plum); }
+.writing-die span:nth-child(2) { grid-column: 3; }
+.writing-die span:nth-child(3) { grid-column: 2; }
+.writing-die span:nth-child(4) { grid-column: 1; }
+.writing-die span:nth-child(5) { grid-column: 3; }
+@media (max-width: 760px) { .writing-panel { grid-template-columns: 1fr; } .writing-details { border-left: 0; border-top: 2px solid var(--gold); padding: 1.5rem 0 0; } }
+
 </style>
   <meta name="portfolio-format" content="self-contained presentation file">
 </head>
@@ -294,6 +309,7 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
       <a href="#about">About</a>
       <a href="#roles">Deck of Roles</a>
       <a href="#press">Press</a>
+      <a href="#writing">Writing</a>
       <a href="#technical">D&amp;T</a>
       <a href="#resume">Résumé</a>
       <a class="nav-cta" href="#contact">Contact</a>
@@ -483,10 +499,27 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
       <p class="press-note">Review descriptions are concise paraphrases; follow each link to read the original coverage.</p>
     </section>
 
+
+    <section id="writing" class="section writing" aria-labelledby="writing-title">
+      <div class="section-label">04 / Writing</div>
+      <div class="writing-panel reveal">
+        <div>
+          <p class="eyebrow">From stage to page</p>
+          <h2 id="writing-title" class="writing-title">The Dice of Life</h2>
+          <p class="writing-byline">A book by MarcAntonio Murillo</p>
+        </div>
+        <div class="writing-details">
+          <div class="writing-die" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          <p>Turning a new page. Explore MarcAntonio’s work as an author and find out more about the book on Amazon.</p>
+          <a class="button button-primary" href="https://www.amazon.com/dp/B0HKC39L5S" target="_blank" rel="noopener noreferrer">Find it on Amazon <span aria-hidden="true">&nbsp;↗</span></a>
+        </div>
+      </div>
+    </section>
+
     <section id="technical" class="section technical">
       <div class="section-heading light">
         <div>
-          <div class="section-label">04 / Design &amp; Technical</div>
+          <div class="section-label">05 / Design &amp; Technical</div>
           <p class="eyebrow">Behind the scenes</p>
           <h2>Technical theatre practice</h2>
         </div>
@@ -519,7 +552,7 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
     <section id="resume" class="section resume">
       <div class="resume-panel reveal">
         <div>
-          <div class="section-label">05 / Résumé</div>
+          <div class="section-label">06 / Résumé</div>
           <p class="eyebrow">Education + training</p>
           <h2>Building the craft onstage and off.</h2>
           <p>Bachelor’s Degree in Psychology with a Minor in Theatre, Northern Arizona University, December 2026. Additional training includes the Saddleback College Shakespeare Festival, PDM Acting Class, and Improv Club.</p>
@@ -533,7 +566,7 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
 
     <section id="contact" class="section contact">
       <div class="contact-copy reveal">
-        <div class="section-label">06 / Contact</div>
+        <div class="section-label">07 / Contact</div>
         <p class="eyebrow">Let’s make something memorable</p>
         <h2>Available for acting, creative, and collaborative opportunities.</h2>
       </div>
